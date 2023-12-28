@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results Page</title>
+    <link rel="stylesheet" href="static\assets\css\success_style.css" />
+    <link href="static/assets/img/globe.png" rel="icon" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <h2>{{predictions}}</h2> -->
+    <section class="body">
+      <!-- <div closs="res-img"></div> -->
+      <div class="header">
+        <!-- <row style="width: 100%; display: flex; justify-content: center">
+          <h3 class="header-text" style="color: white">Uploaded Image</h3>
+        </row> -->
+        <row style="width: 100%; display: flex; justify-content: center">
+          <img class = "result-img" src={{url_for('static', filename =
+          'images/'+ img)}} style="width: 41vw; height: 88vh; margin-top:
+          63px;">
+        </row>
+      </div>
+      <div class="header-text">
+        <h3>
+          <!-- style="top: 20%; left: 60%" -->
+          Results for {{name}}
+        </h3>
+      </div>
+      <p class="res-text" style="top: 41%; left: 59%">
+        The Prediction for input MRI is {{predictions[0]}}.
+      </p>
+      <p class="res-text" style="top: 48%; left: 53%">
+        The Prediction Probability for the input MRI shown left is
+        {{predictions[1]}}%.
+      </p>
+      <a href="/" class="bn3637 bn37">Home</a>
+    </section>
+    <section class="graphs-plot">
+      <div class="plot-holder">
+        <div class="plot">
+          <p>
+            <center>
+              The F1 Score for the predicted data is plotted to the right side.
+            </center>
+          </p>
+        </div>
+        <div class="text">
+          <div class="img-plot">
+            <row style="width: 100%; display: flex; justify-content: center">
+              <img
+                src="{{file_name_f}}"
+                class="img"
+                style="width: 40vw; height: 74vh; margin-top: 10px"
+              />
+            </row>
+          </div>
+        </div>
+      </div>
+
+      <div class="plot-holder">
+        <div class="plot">
+          <p>
+            <center>
+              The Confusion matrix for the predicted data is plotted to the
+              right side.
+            </center>
+          </p>
+        </div>
+        <div class="text">
+          <div class="img-plot">
+            <row style="width: 100%; display: flex; justify-content: center">
+              <img
+                src="{{file_name_m}}"
+                class="img"
+                style="width: 40vw; height: 74vh; margin-top: 10px"
+              />
+            </row>
+          </div>
+        </div>
+      </div>
+
+      <div class="plot-holder">
+        <div class="plot">
+          <p>
+            <center>
+              The Metrics for the predicted data is plotted to the right side.
+            </center>
+          </p>
+        </div>
+        <div class="text">
+          <div class="img-plot">
+            <row style="width: 100%; display: flex; justify-content: center">
+              <img
+                src="{{file_name_metrics}}"
+                class="img"
+                style="width: 40vw; height: 74vh; margin-top: 10px"
+              />
+            </row>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="https://hrushi11.github.io/">Know me</a></li>
+            <li>
+              <a href="#" target="blank">Github</a>
+            </li>
+            <li>
+              <a href="#" target="blank">API Docs</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col span-1-of-2">
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/Hrushi11" target="blank"
+                ><ion-icon name="logo-github" class="github"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/hrushikesh-kachgunde-73a90b186/"
+                target="blank"
+                ><ion-icon name="logo-linkedin" class="lin"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:hrushiskachgunde@gmail.com"
+                ><ion-icon name="mail-outline" class="gm"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/hrushi_ik/" target="blank"
+                ><ion-icon name="logo-instagram" class="ig"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <p class="p">
+          Copyright &copy; 2022; <br />
+          All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

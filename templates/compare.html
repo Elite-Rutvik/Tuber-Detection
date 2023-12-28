@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Comparison</title>
+    <link rel="stylesheet" href="static\assets\css\compare.css" />
+    <link href="static/assets/img/globe.png" rel="icon" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="body">
+      <div class="header-text">
+        <h3>Model Comparisons</h3>
+      </div>
+    </section>
+
+    <section class="graphs-plot">
+      <div class="plot-holder">
+        <div class="img-plot">
+          <row style="width: 100%; display: flex; justify-content: center">
+            <img
+              src="static\graphs\evaluation.png"
+              class="img"
+              style="width: 47vw; height: 78vh; margin-top: 10px"
+            />
+          </row>
+        </div>
+      </div>
+
+      <div class="all-comparison plot-holder">
+        <div class="block1">
+          <img src="static\graphs\CNN\metrics.png" alt="" />
+        </div>
+        <div class="block1 sp">
+          <img src="static\graphs\DNN\metrics.png" alt="" />
+        </div>
+      </div>
+
+      <div class="all-comparison plot-holder">
+        <div class="block1">
+          <img src="static\graphs\DT\metrics.png" alt="" />
+        </div>
+        <div class="block1 sp">
+          <img src="static\graphs\RFC\metrics.png" alt="" />
+        </div>
+      </div>
+
+      <div class="all-comparison plot-holder">
+        <div class="block1">
+          <img src="static\graphs\KNN\metrics.png" alt="" />
+        </div>
+        <div class="block1 sp">
+          <img src="static\graphs\hybrid\metrics.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="https://hrushi11.github.io/">Know me</a></li>
+            <li>
+              <a href="#" target="blank">Github</a>
+            </li>
+            <li>
+              <a href="#" target="blank">API Docs</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col span-1-of-2">
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/Hrushi11" target="blank"
+                ><ion-icon name="logo-github" class="github"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/hrushikesh-kachgunde-73a90b186/"
+                target="blank"
+                ><ion-icon name="logo-linkedin" class="lin"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:hrushiskachgunde@gmail.com"
+                ><ion-icon name="mail-outline" class="gm"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/hrushi_ik/" target="blank"
+                ><ion-icon name="logo-instagram" class="ig"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <p class="p">
+          Copyright &copy; 2022;<br />
+          All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

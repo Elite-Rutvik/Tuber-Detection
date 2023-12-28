@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  /* overflow: hidden; */
+}
+
+/* .body { */
+/* height: 115vh; */
+/* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+/* overflow: hidden; */
+/* background-color: black; */
+
+/* filter: drop-shadow(0 0 10px white); */
+/* padding-bottom: 20px; */
+/* } */
+
+.header {
+  position: absolute;
+  left: 7%;
+  top: 9.5%;
+}
+
+.header-text {
+  /* position: absolute; */
+  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+
+.res-text {
+  color: wheat;
+  position: absolute;
+  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+/* * Scrollbar * */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: aquamarine;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(127, 255, 212, 0.611);
+}
+/* Button */
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.bn37 {
+  border-color: transparent;
+  background-color: #fff;
+  color: #000;
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  position: absolute;
+  top: 59%;
+  left: 70%;
+}
+
+.bn37:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  color: darkblue;
+  background-color: rgb(33, 233, 220);
+}
+
+/* Graph CSS */
+
+.img-plot {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  width: 48vw;
+  background-color: white;
+  /* margin-top: 14vh; */
+  /* width: 40vw; */
+  /* margin-left: 54vw; */
+}
+
+.plot-holder {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block1 {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  width: 30vw;
+  background-color: white;
+}
+
+.sp {
+  margin-left: 15px;
+}
+
+/* Footer */
+footer {
+  /* margin-top: 100vh; */
+  /* background-color: rgb(43, 41, 41); */
+  background: rgba(0, 0, 0, 0.897);
+  padding: 20px 40px 20px 40px;
+  font-size: 90%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgb(175, 172, 172);
+  transition: color 0.3s;
+  font-size: 110%;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  /* color: white; */
+  color: cyan;
+}
+
+.p {
+  color: rgba(255, 255, 255, 0.671);
+  text-align: center;
+  margin-top: 80px;
+}
+
+.p:hover {
+  color: cyan;
+  /* color: white; */
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 180%;
+}
+
+.github,
+.gm,
+.ig,
+.lin {
+  transition: color 0.3s;
+}
+
+.github:hover {
+  /* color: white; */
+  color: cyan;
+}
+
+.gm:hover {
+  /* color: white; */
+  color: cyan;
+}
+.ig:hover {
+  /* color: white; */
+  color: cyan;
+}
+.lin:hover {
+  /* color: white; */
+  color: cyan;
+}
+
+footer p {
+  cursor: context-menu;
+  /* padding-top: 10px; */
+}

@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+  background: black;
+  /* overflow: hidden; */
+}
+
+.body {
+  height: 115vh;
+  /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+  /* overflow: hidden; */
+  /* background-color: black; */
+
+  /* filter: drop-shadow(0 0 10px white); */
+  padding-bottom: 20px;
+}
+
+.header {
+  position: absolute;
+  left: 7%;
+  top: 9.5%;
+}
+
+.header-text {
+  /* position: absolute; */
+  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+
+.res-text {
+  color: rgba(245, 245, 245, 0.688);
+  position: absolute;
+  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+/* * Scrollbar * */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: aquamarine;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(127, 255, 212, 0.504);
+}
+/* Button */
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.bn37 {
+  border-color: transparent;
+  background-color: #fff;
+  color: #000;
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  position: absolute;
+  top: 59%;
+  left: 70%;
+}
+
+.bn37:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  color: darkblue;
+  /* background-color: rgb(33, 233, 220); */
+  background-color: aquamarine;
+}
+
+/* Graphs CSS */
+.plot-holder {
+  margin: 0;
+  display: flex;
+  width: 99.2vw;
+  height: 100vh;
+  /* justify-content: center;
+    align-items: center; */
+}
+
+.plot {
+  display: flex;
+  float: left;
+  /* background-color: aqua; */
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  /* background-color: antiquewhite; */
+  width: 50vw;
+  /* padding-left: 110px; */
+}
+
+.img {
+  width: 50%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-plot {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  background-color: white;
+  /* margin-top: 14vh; */
+  /* width: 40vw; */
+  /* margin-left: 54vw; */
+}
+
+/* .plot {
+    display: flex;
+  }
+  
+  .img-plots {
+    background-color: white;
+    margin-top: 110vh;
+    width: 39vw;
+    margin-left: 54vw;
+  }
+  
+  .plot-text-1 {
+    color: wheat;
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    top: 142%;
+    left: 7%;
+    right: 52%;
+    display: flex;
+    text-align: center;
+  }
+  
+  .plot-text-2 {
+    color: wheat;
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    top: 232%;
+    left: 50%;
+    right: 4%;
+    display: flex;
+    text-align: center;
+  }
+  
+  .img-plots-2 {
+    background-color: white;
+    margin-top: 13vh;
+    width: 39vw;
+    margin-left: 7vw;
+  }
+  
+  .img-plots-3 {
+    background-color: white;
+    margin-top: 14vh;
+    width: 40vw;
+    margin-left: 54vw;
+  }
+  
+  .plot-text-3 {
+    color: wheat;
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    top: 319%;
+    left: 7%;
+    right: 52%;
+    display: flex;
+    text-align: center;
+  } */
+
+/* Footer */
+footer {
+  /* margin-top: 100vh; */
+  /* background-color: rgb(43, 41, 41); */
+  background: rgba(0, 0, 0, 0.897);
+  padding: 20px 40px 20px 40px;
+  font-size: 90%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgb(175, 172, 172);
+  transition: color 0.3s;
+  font-size: 110%;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  /* color: white; */
+  color: cyan;
+}
+
+.p {
+  color: rgba(255, 255, 255, 0.671);
+  text-align: center;
+  margin-top: 80px;
+}
+
+.p:hover {
+  color: cyan;
+  /* color: white; */
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 180%;
+}
+
+.github,
+.gm,
+.ig,
+.lin {
+  transition: color 0.3s;
+}
+
+.github:hover {
+  /* color: white; */
+  color: cyan;
+}
+
+.gm:hover {
+  /* color: white; */
+  color: cyan;
+}
+.ig:hover {
+  /* color: white; */
+  color: cyan;
+}
+.lin:hover {
+  /* color: white; */
+  color: cyan;
+}
+
+footer p {
+  cursor: context-menu;
+  /* padding-top: 10px; */
+}
